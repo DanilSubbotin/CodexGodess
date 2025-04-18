@@ -1,0 +1,9 @@
+﻿@page
+@model CodexGoddess.Pages.CatalogModel
+@{
+    <p>Заголовок</p>
+    foreach(var car in Model.cars)
+    {
+        <p>@car.Name - @car.Description - @car.Price</p>
+    }
+}

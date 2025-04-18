@@ -1,0 +1,232 @@
+html {
+  font-size: 14px;
+}
+
+.title{
+color: blue;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  padding-top: 140px;
+}
+.background_img {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    background-color: #f7f4ff;
+}
+nav {
+    transition: 0.2s;
+    height: 100px;
+}
+ .nav_item:hover {
+        background-color: mistyrose;
+}
+
+.scrolled {
+    background-color: white;
+}
+
+nav.scrolled {
+    height: 65px;
+}
+
+header {
+    position: fixed;
+    top: 30px;
+    background-color: #f7a9b5;
+    width: 100%;
+    z-index: 100;
+}
+
+.page_index {
+    text-align: center;
+    font-family:'Century Gothic';
+    margin-top: 20px; 
+}
+p {
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.page_index p {
+    text-align: center;
+    font-family:'Adobe Garamond Pro';
+    font-size: 18px;
+}
+.index_slogan p {
+    text-align: center;
+    font-family: 'Adobe Garamond Pro';
+    font-size: 18px;
+}
+
+.index_slogan {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    width: 650px;
+    margin-top: 40px;
+    font-family: 'Century Gothic';
+}
+
+#catalog_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    gap: 20px;
+}
+.catalog_item {
+    border-radius: 2px;
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+    background: linear-gradient(white, mistyrose, pink);
+}
+.item_img {
+    width: 280px;
+    height: 240px;
+    margin-bottom: 10px;
+}
+
+.item_title {
+    font-size: 18px;
+    height: 48px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-family: 'Century Gothic';
+}
+
+.item_description {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Adobe Garamond Pro';
+    line-height: 20px;
+    height: 120px;
+}
+
+.item_price {
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: bold;
+    height: 30px;
+    font-family: 'Century Gothic';
+}
+    .item_img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+}
+.item_add-btn {
+    border-radius: 20px;
+    border: none;
+    background-color: #f7a9b5;
+    padding: 6px 16px;
+    font-weight: 400;
+    transition: 0.2s;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.item_add-btn:hover{
+    background-color: black;
+    color: white;
+}
+.catalog_item:hover {
+    background-color: #ff7990;
+    transform: scale(1.02);
+    box-shadow: 0 0px 8px 5px pink;
+}
+.input_item {
+    border: 2px solid #f7a9b5;
+    height: 34px;
+    border-radius: 20px;
+    width: 400px;
+}
+.input_item-new {
+    border: 2px solid #f7a9b5;
+    height: 60px;
+    border-radius: 20px;
+    margin:20px;
+    width: 400px;
+}
+#cart_table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.cart_grid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.cart_item {
+    border-radius: 2px;
+    padding: 10px 16px;
+    display: flex;
+    height: 170px;
+    width: 350px;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    transition: 0.2s;
+    cursor: pointer;
+    background: linear-gradient(white, mistyrose, pink);
+}
+.cart_item:hover {
+    background-color: #ff7990;
+    transform: scale(1.02);
+    box-shadow: 0 0px 8px 5px pink;
+}
+
+
+.item_title_cart {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Century Gothic';
+}
+.btn_add-remove {
+    display: flex;
+    margin-bottom: -10px;
+}
+
+@media(max-width: 375px) {
+    #catalog_grid {
+        grid-template-columns: 1fr;
+    }
+    .catalog_item:hover{
+        transform: scale(1);
+    }
+    .item_add-btn{
+        font-size: 24px;
+    }
+}
